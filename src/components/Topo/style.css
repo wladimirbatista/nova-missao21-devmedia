@@ -1,0 +1,13 @@
+header {
+  padding: 40px 20px;
+  background-color: turquoise;
+}
+
+.container-topo {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid red;
+}

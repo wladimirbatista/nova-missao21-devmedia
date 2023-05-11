@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.banner-LandingPage {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../../assets/banner.jpg);
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-LandingPage div {
+  padding: 0px 10px;
+  flex: 0 1 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 2px #282c34;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.banner-LandingPage div h1 {
+  letter-spacing: 5px;
+  font-size: 60px;
+}
+
+.link-home {
+  padding: 20px 40px;
+  background-color: #282c34;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 500px) {
+  .banner-LandingPage div h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+}

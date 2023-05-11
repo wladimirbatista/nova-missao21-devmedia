@@ -1,0 +1,25 @@
+main {
+  background-color: #2e2e2e;
+  padding: 100px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-subtitulo {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+.container-cards {
+  border: 1px solid red;
+
+  max-width: 1200px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
