@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import './style.css'
 
 const Topo = () => {
@@ -9,9 +8,6 @@ const Topo = () => {
           <span>Olá</span>
           <h2>Seja bem vindo(a)</h2>
         </div>
-        <nav>
-          <Link to="/">Home</Link>
-        </nav>
       </div>
     </header>
   )

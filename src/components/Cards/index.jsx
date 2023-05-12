@@ -2,8 +2,6 @@ import "./style.css"
 
 const Cards = ({produto}) => {
 
-  console.log(produto)
-
   return(
     <div className="card">
       <figure>
@@ -11,6 +9,7 @@ const Cards = ({produto}) => {
       </figure>
       <div>
         <h3>{produto.nome}</h3>
+        <small>{produto.categoria}</small>
         <p>{produto.descricao}</p>
       </div>
       <div>

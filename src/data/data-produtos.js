@@ -10,6 +10,7 @@ export const produtos = [
   {
     id: 2,
     nome: "Lasanha",
+    categoria: "Massas",
     preco: 25.00,
     descricao: "Uma maravilhosa lasanha com recheios variados como carne moída, frango, presunto e queijo, legumos e molho branco ou vermelho",
     imagem: "https://img.freepik.com/free-photo/baked-lasagna-with-gourmet-italian-bolognese-sauce-generated-by-ai_188544-9608.jpg?w=1380&t=st=1683745297~exp=1683745897~hmac=403a7bacb9a4eb7cf5c72ce0d137fe5db48e0a5936901cd2b0ad1d9f6412bc4e"
@@ -121,7 +122,7 @@ export const produtos = [
   {
     id: 16,
     nome: "Tiramisu",
-    categoria: "Sobremesa",
+    categoria: "Sobremesas",
     preco: 15.99,
     descricao: "Sobremesa italiana que leva pão de ló, café, queijo mascarpone, ovos, açucar e cacau em pó",
     imagem: "https://img.freepik.com/free-photo/slice-tiramisu-cake-with-glass-lemonade_114579-17105.jpg?w=1380&t=st=1683749786~exp=1683750386~hmac=68313fdc70723ac1c39f96613b22b1a061698888bd0629cf5dac688991d65487"
@@ -129,7 +130,7 @@ export const produtos = [
   {
     id: 17,
     nome: "Cheesecake",
-    categoria: "Sobremesa",
+    categoria: "Sobremesas",
     preco: 8.99,
     descricao: "Típica sobremesa dos Estados Unidos, que leva bolo, cream cheese e calda de frutas",
     imagem: "https://img.freepik.com/free-photo/closeup-shot-cheesecake-with-jelly-decorated-with-strawberries-berries_181624-45104.jpg?w=1380&t=st=1683749810~exp=1683750410~hmac=aab7aac9c4ff9d3c1e3a700dbe5afd1e74871586711bf75a8da704642105be2c"
@@ -137,7 +138,7 @@ export const produtos = [
   {
     id: 18,
     nome: "Banoffee",
-    categoria: "Sobremesa",
+    categoria: "Sobremesas",
     preco: 9.99,
     descricao: "Uma sobremesa inglesa, feita a base de biscoito triturado com manteiga, uma camada de doce de leite, banana fatiada e chantilly",
     imagem: "https://img.freepik.com/free-photo/banoffee-cake-plate_1339-7279.jpg?w=1380&t=st=1683749838~exp=1683750438~hmac=69979975fed1eadde1bcff51cfbc900e8056822100dcaae60e4edaaaac435cb4"
@@ -145,7 +146,7 @@ export const produtos = [
   {
     id: 19,
     nome: "Mil-folhas",
-    categoria: "Sobremesa",
+    categoria: "Sobremesas",
     preco: 9.99,
     descricao: "Sobremesa de origem francesa, feita com massa folhada crocante e recheio cremoso de baunilha, chocolate ou frutas e açucar de confeiteiro",
     imagem: "https://img.freepik.com/free-photo/white-plate-with-two-pieces-napoleon-cake-cocoa-powder_114579-52030.jpg?w=1380&t=st=1683749917~exp=1683750517~hmac=d00a2d6540b7e5a269b0f9db2cf3a90c1ed64095434296c6329efec20b712bcd"
@@ -153,7 +154,7 @@ export const produtos = [
   {
     id: 20,
     nome: "Pudim",
-    categoria: "Sobremesa",
+    categoria: "Sobremesas",
     preco: 5.99,
     descricao: "Sobremesa cremosa e gelada muito popular no Brasil, feita com leite condesado, leite e ovos",
     imagem: "https://img.freepik.com/free-photo/caramel-custard-white-dish-popular-dessert-cafe_1428-99.jpg?w=1380&t=st=1683749952~exp=1683750552~hmac=cf64b56d0c36784a3e42fa934dcf7630c1b05f459d656519916fa6533a55691d"

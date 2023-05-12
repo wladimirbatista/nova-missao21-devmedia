@@ -4,7 +4,7 @@ import Main from "../../components/Main";
 const Home = () => {
   return(
     <>
-      <Topo />
+      {/* <Topo /> */}
       <Main />
     </>
   )
