@@ -1,11 +1,9 @@
-.container-categorias {
-  border: 1px solid yellow;
+.secao-categorias {
   width: 100%;
-  max-width: 1200px;
-  margin-bottom: 50px;
+  max-width: 1024px;
 }
 
-.container-categorias div h2{
+.secao-categorias div h2{
   margin-bottom: 20px;
 }
 
@@ -19,7 +17,7 @@
 
 .container-botoes button {
   padding: 10px;
-  flex: 1 1 160px;
+  flex: 1 1 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,6 +25,12 @@
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+}
+
+.container-botoes button:hover {
+  background-color: goldenrod;
 }
 
 .container-botoes button img {

@@ -1,20 +1,16 @@
-import { useState } from "react";
-import { produtos } from "../../data/data-produtos";
+import "./style.css";
+import Lupa from '../../assets/lupa-de-pesquisa.png'
 
-const BarraDePesquisa = () => {
-  const [pesquisarProduto, setPesquisarProduto] = useState("");
-
-  const produtoFiltrado = produtos.filter((produto) => produto.nome.includes(pesquisarProduto.toLocaleLowerCase()));
-
+const BarraDePesquisa = ({ textoBuscaDigitado, handleBusca }) => {
   return (
-    <div>
+    <div className="barra-de-pesquisa">
+      <img src={Lupa} alt="icone"/>
       <input
         type="text"
-        value={pesquisarProduto}
-        onChange={(event) => setPesquisarProduto(event.target.value)}
-        placeholder="Escreva o nome do prato desejado!"
+        value={textoBuscaDigitado}
+        onChange={(event) => handleBusca(event.target.value)}
+        placeholder="Pesquise aqui um dos pratos do nosso cardápio"
       />
-      <button>Pesquisar</button>
     </div>
   );
 };

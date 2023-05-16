@@ -1,44 +1,42 @@
 import "./style.css";
 
-import imagem1 from "../../assets/entrada.png";
-import imagem2 from "../../assets/massa.png";
-import imagem3 from "../../assets/carne.png";
-import imagem4 from "../../assets/bebidas.png";
-import imagem5 from "../../assets/salada.png";
-import imagem6 from "../../assets/sobremesa.png";
-import { useState } from "react";
+import icone1 from "../../assets/entrada.png";
+import icone2 from "../../assets/massa.png";
+import icone3 from "../../assets/carne.png";
+import icone4 from "../../assets/bebidas.png";
+import icone5 from "../../assets/salada.png";
+import icone6 from "../../assets/sobremesa.png";
 
-
-const Categorias = ({produtoFiltrado}) => {
-
-  const [filtroCategoria, setFiltroCategoria] = useState("");
-
-  const produtoFiltroCategoria = produtoFiltrado.filter((produto) => produto.categoria === filtroCategoria);
-  setFiltroCategoria(produtoFiltroCategoria)
-  
+const Categorias = ({ handleFiltro }) => {
   return (
-    <section className="container-categorias">
-      <div>
+    <section className="secao-categorias">
+      {/* <div>
         <h2>Categorias</h2>
-      </div>
+      </div> */}
       <div className="container-botoes">
-        <button name="Entradas" value="Entradas" onClick={() => setFiltroCategoria("Entradas")}>Entradas
-          <img src={imagem1} alt="ícone" />
+        <button value="Entradas" onClick={() => handleFiltro("Entradas")}>
+          <img src={icone1} alt="ícone" />
+          Entradas
         </button>
-        <button name="Massas" value="Massas" onClick={() => setFiltroCategoria("Massas")}>Massas
-          <img src={imagem2} alt="ícone" />
+        <button value="Massas" onClick={() => handleFiltro("Massas")}>
+          <img src={icone2} alt="ícone" />
+          Massas
         </button>
-        <button name="Carnes" value="Carnes" onClick={() => setFiltroCategoria("Carnes")}>Carnes
-          <img src={imagem3} alt="ícone" />
+        <button value="Carnes" onClick={() => handleFiltro("Carnes")}>
+          <img src={icone3} alt="ícone" />
+          Carnes
         </button>
-        <button name="Sobremesas" value="Sobremesas" onClick={() => setFiltroCategoria("Sobremesas")}>Sobremesas
-          <img src={imagem4} alt="ícone" />
+        <button value="Bebidas" onClick={() => handleFiltro("Bebidas")}>
+          <img src={icone4} alt="ícone" />
+          Bebidas
         </button>
-        <button name="Bebidas" value="Bebidas" onClick={() => setFiltroCategoria("Bebidas")}>Bebidas
-          <img src={imagem5} alt="ícone" />
+        <button value="Saladas" onClick={() => handleFiltro("Saladas")}>
+          <img src={icone5} alt="ícone" />
+          Saladas
         </button>
-        <button name="Saladas" value="Saladas" onClick={() => setFiltroCategoria("Saladas")}>Saladas
-          <img src={imagem6} alt="ícone" />
+        <button value="Sobremesas" onClick={() => handleFiltro("Sobremesas")}>
+          <img src={icone6} alt="ícone" />
+          Sobremesas
         </button>
       </div>
     </section>
