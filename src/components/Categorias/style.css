@@ -36,3 +36,7 @@
 .container-botoes button img {
   width: 20px;
 }
+
+.acenderBtn {
+  background-color: goldenrod;
+}

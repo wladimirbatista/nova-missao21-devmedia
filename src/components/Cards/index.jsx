@@ -2,7 +2,6 @@ import "./style.css";
 
 const Cards = ({ produto }) => {
 
-  console.log(produto.imagem)
   return (
     <div className="card">
       <figure>

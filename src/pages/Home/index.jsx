@@ -13,20 +13,19 @@ import BarraDePesquisa from "../../components/BarraDePesquisa";
 const Home = () => {
   const [dadosFiltrados, setDadosFiltrados] = useState(produtosEntradas);
   const [textoBuscaDigitado, setTextoBuscaDigitado] = useState("");
+  const [botaoClicado, setBotaoClicado] = useState("Entradas");
 
   const handleBusca = (texto) => {
     setTextoBuscaDigitado(texto);
-    if (texto.length >= 3) {
-      const produtosPesquisado = buscarProduto(texto);
-      setDadosFiltrados(produtosPesquisado);
-    }
+    texto.length >= 3 && setDadosFiltrados(buscarProduto(texto));
+    setBotaoClicado("");
   };
 
   const handleFiltro = (categoria) => {
     setTextoBuscaDigitado("");
-    const produtosFiltrados = filtrarProdutos(categoria);
-    setDadosFiltrados(produtosFiltrados);
-  };
+    setDadosFiltrados(filtrarProdutos(categoria));
+    setBotaoClicado(categoria);
+  }
 
   return (
     <div>
@@ -41,7 +40,8 @@ const Home = () => {
         </div>
       </header>
       <main className="container-principal">
-        <Categorias handleFiltro={handleFiltro} />
+        <Categorias handleFiltro={handleFiltro} botaoClicado={botaoClicado} />
+
         <BarraDePesquisa
           textoBuscaDigitado={textoBuscaDigitado}
           handleBusca={handleBusca}
